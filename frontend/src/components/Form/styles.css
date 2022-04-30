@@ -1,0 +1,14 @@
+.select-country{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.select-country h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.select-country h2{
+    font-weight: normal;
+}

@@ -13,8 +13,9 @@ const api = require('../services/holiday');
  exports.get = async (req, res, next) => {
    const dataHolidays = await api.holidays({
       country: req.params.code,
+      day: req.params.day,
+      month: req.params.month,
       year: req.params.year,
-      date: req.params.date
    });
 
    const formattedHolidays = dataHolidays.holidays.map(holiday => {
